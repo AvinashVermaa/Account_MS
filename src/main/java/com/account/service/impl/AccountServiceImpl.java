@@ -46,7 +46,7 @@ public class AccountServiceImpl implements IAccountService{
 			throw new CustomerAlreadyExistsException("Customer already registered with given mobileNumber "+customerDto.getMobileNumber());
 			
 		}
-		System.out.println("1");
+		System.out.println("3");
 		Customer savedCustomer = customerRepo.save(customer);
 		System.out.println("2");
 		accountsRepo.save(createNewAccount(savedCustomer));
