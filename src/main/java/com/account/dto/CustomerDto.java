@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+
 @Schema(name="Customer",description="Schema to hold Customer and Account information")
 public class CustomerDto {
 
