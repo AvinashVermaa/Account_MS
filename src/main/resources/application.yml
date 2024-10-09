@@ -39,11 +39,21 @@ management:
     web:
       exposure:
         include: '*'
+        
+  health:
+    readinessstate:
+      enabled: true
+    
+    livenessstate:
+      enabled: true
+    probes:
+      enabled: true
 
 
   endpoint:
     shutdown:
       enabled: true
+      
       
   info:
     env:
@@ -69,6 +79,13 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/     
+      
+logging:
+  level:
+    com:
+      account: DEBUG
+      
+
 
 #build:
 #  version: "3.0"
